@@ -5,7 +5,8 @@ import json
 class MonitorHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
+        # CHANGE THIS LINE BELOW: Add ; charset=utf-8 right next to text/html
+        self.send_header("Content-type", "text/html; charset=utf-8")
         self.end_headers()
         
         # Gather live Windows system stats using psutil
