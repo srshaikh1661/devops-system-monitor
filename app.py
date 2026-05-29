@@ -19,6 +19,7 @@ class MonitorHandler(SimpleHTTPRequestHandler):
         <html>
         <head>
             <title>DevOps System Monitor</title>
+            <meta charset="UTF-8">
             <meta http-equiv="refresh" content="3">
             <style>
                 body {{ font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; text-align: center; padding: 40px; }}
